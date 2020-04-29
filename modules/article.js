@@ -1,3 +1,7 @@
+/**
+ * Created by xxy on 2020/4/27.
+ * 实体模型
+ */
 // 引入mysql的配置文件
 const db = require('../config/db')
 

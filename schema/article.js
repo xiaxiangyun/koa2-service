@@ -1,4 +1,8 @@
-const moment = require("moment")
+/**
+ * Created by xxy on 2020/4/27.
+ * 数据表模型实例
+ */
+const moment = require('moment')
 module.exports = function (sequelize, DataTypes) {
   return sequelize.define('article', {
     id: {

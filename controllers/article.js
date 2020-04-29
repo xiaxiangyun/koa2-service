@@ -1,3 +1,7 @@
+/**
+ * Created by xxy on 2020/4/27.
+ * 控制器
+ */
 const ArticleModel = require("../modules/article")
 
 class articleController {

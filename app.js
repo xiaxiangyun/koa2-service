@@ -14,7 +14,9 @@ onerror(app)
 
 app.use(convert.compose(
   // koaBody({ multipart: true }),
-  bodyparser,
+  bodyparser({
+    enableTypes: ['json', 'form', 'text']
+  }),
   json(),
   logger(),
   cors(),
