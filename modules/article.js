@@ -2,14 +2,10 @@
  * Created by xxy on 2020/4/27.
  * 实体模型
  */
-// 引入mysql的配置文件
-const db = require('../config/db')
 
-// 引入sequelize对象
-const Sequelize = db.sequelize
-
-// 引入数据表模型
-const Article = Sequelize.import('../schema/article')
+const db = require('../config/db') // 引入mysql的配置文件
+const Sequelize = db.sequelize // 引入sequelize对象
+const Article = Sequelize.import('../schema/article') // 引入数据表模型
 Article.sync({ force: false }) //自动创建表
 
 class ArticleModel {

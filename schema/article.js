@@ -3,6 +3,7 @@
  * 数据表模型实例
  */
 const moment = require('moment')
+
 module.exports = function (sequelize, DataTypes) {
   return sequelize.define('article', {
     id: {
